@@ -1,0 +1,34 @@
+{
+  "name": "sorting-algorithms-visualizer",
+  "version": "0.1.0",
+  "private": false,
+  "description": "This is a desktop and web app to help visualize different sorting algorithms, inspired by Wikipedia's python example with tkinter.",
+  "main": "main.js",
+  "repository": "git@github.com:martline1/sorting-algorithms-visualizer.git",
+  "author": "Alcalá León Yael Mártin A. <yael.alcalla@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:next": "cross-env NODE_ENV=development next dev",
+    "dev:electron": "cross-env NODE_ENV=development electron .",
+    "dev": "concurrently \"npm run dev:next\" \"npm run dev:electron\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-feather": "^2.0.10",
+    "recharts": "^2.1.10"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "electron": "^19.0.3",
+    "electron-nightly": "^21.0.0-nightly.20220603",
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6",
+    "sass": "^1.52.2"
+  }
+}
