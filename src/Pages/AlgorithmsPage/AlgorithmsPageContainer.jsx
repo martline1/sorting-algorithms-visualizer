@@ -57,12 +57,17 @@ const AlgorithmsPageContainer = () => {
         return generateData(amount + (isAdding ? 1 : -1));
     });
 
+    const handleSort = () => {
+
+    };
+
     return (
         <AlgorithmsPage
             router={router}
             delegations={{
                 data,
                 pageName,
+                handleSort,
                 handleShuffle,
                 algorithmType,
                 handleAddOrRemove,
