@@ -4,7 +4,7 @@ const nextConfig = {
 	redirects : async () => [
 		{
 			source      : "/",
-			destination : "/algorithms/quick_sort",
+			destination : "/algorithms/quick",
 			permanent   : false,
 		},
 	],

@@ -1,0 +1,72 @@
+.root {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: min(60rem, 90%);
+
+    margin-top: min(4rem, 7%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chart {
+    display: flex;
+    flex-direction: row;
+
+    & > div:first-child {
+        flex-grow: 1;
+        min-height: 20rem;
+    }
+
+    & > div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-left: 0.5rem;
+    }
+}
+
+.circledButton {
+    color: #1976d2;;
+    border: 1px solid rgba($color: #007FFF, $alpha: 0.5);
+}
+
+.roundedButton {
+    border-radius: 100rem;
+    background-color: #007FFF;
+
+    text-transform: none;
+    outline: none;
+
+    font-size: 1.2em;
+
+    & svg {
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+    }
+}
+
+.outlinedButton {
+    background-color: #fff !important;
+}
+
+.chartOptions {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.buttonGroup {
+    margin-right: 2rem;
+}

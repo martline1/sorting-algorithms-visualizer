@@ -1,1 +1,1 @@
-export { default } from "./AlgorithmsPage.jsx";
+export { default } from "./AlgorithmsPageContainer.jsx";
