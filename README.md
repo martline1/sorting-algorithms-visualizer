@@ -1,5 +1,7 @@
 # Sorting Algorithms Visualizer
 
+![demo](./assets/demo.png)
+
 This is a desktop and web app to help visualize different sorting algorithms, inspired by Wikipedia's python example with tkinter.
 
 ## How to run?

@@ -1,0 +1,19 @@
+.roundedButton {
+    border-radius: 100rem;
+    background-color: #007FFF;
+
+    text-transform: none;
+    outline: none;
+
+    font-size: 1.2em;
+
+    & svg {
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+    }
+}
+
+.outlinedButton {
+    background-color: #fff !important;
+}

@@ -7,6 +7,11 @@ const nextConfig = {
 			destination : "/algorithms/quick",
 			permanent   : false,
 		},
+		{
+			source      : "/algorithms",
+			destination : "/algorithms/quick",
+			permanent   : false,
+		},
 	],
 };
 
