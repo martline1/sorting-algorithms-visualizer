@@ -6,8 +6,9 @@ import {
 import { useRouter } from "next/router";
 
 // Import Own Components
-import { capitalize } from "Helpers";
-import AlgorithmsPage from "./AlgorithmsPage.jsx";
+import { capitalize }  from "Helpers";
+import * as Algorithms from "Helpers/SortingAlgorithms";
+import AlgorithmsPage  from "./AlgorithmsPage.jsx";
 
 const algorithmTypes = ["quick", "merge", "heap", "shell"];
 
@@ -58,7 +59,19 @@ const AlgorithmsPageContainer = () => {
     });
 
     const handleSort = () => {
+        const values = data.map(({ uv }) => uv);
 
+        console.log({
+            tag      : "quick",
+            original : values,
+            result   : Algorithms.quick([...values], 0, values.length - 1),
+        });
+
+        console.log({
+            tag      : "merge",
+            original : values,
+            result   : Algorithms.merge([...values], 0, values.length - 1),
+        });
     };
 
     return (
