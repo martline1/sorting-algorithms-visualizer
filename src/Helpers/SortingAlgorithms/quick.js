@@ -33,4 +33,8 @@ const quickSort = (items, left, right) => {
     return items;
 };
 
-export default quickSort;
+export default function defaultQuickSort(arr) {
+    const sortedArray = [...arr];
+
+    return quickSort(sortedArray, 0, sortedArray.length - 1);
+};

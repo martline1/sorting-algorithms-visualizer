@@ -61,17 +61,13 @@ const AlgorithmsPageContainer = () => {
     const handleSort = () => {
         const values = data.map(({ uv }) => uv);
 
-        console.log({
-            tag      : "quick",
-            original : values,
-            result   : Algorithms.quick([...values], 0, values.length - 1),
-        });
-
-        console.log({
-            tag      : "merge",
-            original : values,
-            result   : Algorithms.merge([...values], 0, values.length - 1),
-        });
+        for (const sortName of algorithmTypes) {
+            console.log({
+                tag      : sortName,
+                original : values,
+                result   : Algorithms[sortName]([...values]),
+            });
+        }
     };
 
     return (

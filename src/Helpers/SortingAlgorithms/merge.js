@@ -1,18 +1,3 @@
-// main function that sorts array[start..end] using merge()
-function mergeSort(array, start, end) {
-	// base case
-	if (start < end) {
-		// find the middle point
-		let middle = Math.floor((start + end) / 2)
-
-		mergeSort(array, start, middle) // sort first half
-		mergeSort(array, middle + 1, end)  // sort second half
-
-		// merge the sorted halves
-		merge(array, start, middle, end)
-	}
-}
-
 // merges two subarrays of array[]
 function merge(array, start, middle, end) {
 	// create temp arrays
@@ -54,4 +39,25 @@ function merge(array, start, middle, end) {
 	while (rightIndex < rightArrayLength) array[currentIndex++] = rightArray[rightIndex++]
 }
 
-export default mergeSort;
+// main function that sorts array[start..end] using merge()
+function mergeSort(array, start, end) {
+	// base case
+	if (start < end) {
+		// find the middle point
+		let middle = Math.floor((start + end) / 2)
+
+		mergeSort(array, start, middle) // sort first half
+		mergeSort(array, middle + 1, end)  // sort second half
+
+		// merge the sorted halves
+		merge(array, start, middle, end)
+	}
+
+	return array;
+}
+
+export default function defaultMerge(arr) {
+	const sortedArray = [...arr];
+
+	return mergeSort(sortedArray, 0, sortedArray.length - 1);
+};
